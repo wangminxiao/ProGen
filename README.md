@@ -1,7 +1,7 @@
 # ProGen Setup and Execution Guide
 
 ## Overview
-ProGen is a projection-based adversarial attack generation framework designed to evade ML-based Network Intrusion Detection Systems (NIDSs). Unlike traditional adversarial attacks that apply arbitrary perturbations, ProGen leverages a traffic-space Generative Adversarial Network (GAN) to project malicious traffic into benign traffic distribution while preserving communication and attack functionality. The framework builds upon NetShare and uses the DoppelGANger model for generating realistic adversarial network traffic. ProGen has been tested on CIC-IDS-2017, CIC-IDS-2018, and UNSW-NB15 datasets, demonstrating its ability to degrade NIDS detection performance across multiple machine learning models.
+[ProGen](https://ieeexplore.ieee.org/abstract/document/10531273) is a projection-based adversarial attack generation framework designed to evade ML-based Network Intrusion Detection Systems (NIDSs). Unlike traditional adversarial attacks that apply arbitrary perturbations, ProGen leverages a traffic-space Generative Adversarial Network (GAN) to project malicious traffic into benign traffic distribution while preserving communication and attack functionality. The framework builds upon NetShare and uses the DoppelGANger model for generating realistic adversarial network traffic. ProGen has been tested on CIC-IDS-2017, CIC-IDS-2018, and UNSW-NB15 datasets, demonstrating its ability to degrade NIDS detection performance across multiple machine learning models.
 
 The codes of ProGen are based on Netshare implement.
 
