@@ -1,0 +1,31 @@
+NetsharePrePostProcessor._pre_process
+./ids_data/data/cic17_normal_portscan_cb.csv
+dataset type: netflow
+metadata cols: ['index', 'srcip', 'dstip', 'srcport', 'dstport', 'proto']
+word2vec cols: ['srcport', 'dstport', 'proto']
+Training Word2Vec model from scratch...
+Word2Vec model is saved at ./results/cic17_normal_portscan_0/pre_processed_data/word2vec_vecSize_10.model
+Building annoy dictionary word2vec...
+{'port': ['srcport', 'dstport'], 'proto': ['proto']}
+Finish building Angular trees...
+metadata fields: ['index', 'srcip', 'dstip', 'srcport', 'dstport', 'proto']
+timeseries fields: ['direc', 'pkt_len', 'head_len', 'tcp_flag', 'windows']
+Using fixed_time
+1
+Chunk_id: 0, # of pkts/records: 192187
+df_chunk_cnt_validation: 192187
+Chunk time: 119.999872 seconds
+compute flowkey-chunk list from scratch...
+processing chunk 1/1, # of flows: 11999
+# of total flows: 11999
+# of total flows (sanity check): 11999
+# of flows cross chunk (of total flows): 0 (0.0%)
+# of non-continuous flows: 0
+chunk_id: 0, max_flow_len: 953
+global max flow len: 953
+Top 10 per-chunk flow length: [706, 725, 750, 752, 786, 861, 870, 881, 933, 953]
+
+Chunk_id: 0
+index
+srcip
+dstip

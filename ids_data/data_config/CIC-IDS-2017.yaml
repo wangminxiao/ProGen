@@ -1,0 +1,55 @@
+# basic info
+data_name: 'CIC-IDS-2017'
+class_name: ['BENIGN', 'PortScan', 'DoS Hulk', 'DDoS', 'DoS GoldenEye',
+             'DoS slowloris', 'DoS Slowhttptest', 'FTP-Patator', 'SSH-Patator', 'Bot',
+             'Web Attack - Brute Force', 'Web Attack - XSS', 'Web Attack - Sql Injection', 'Infiltration', 'Heartbleed']
+malicious_ip: {'PortScan': ['172.16.0.1'],
+               'DoS Hulk': ['205.174.165.73','172.16.0.1'],
+               'DDoS': ['172.16.0.1'],
+               'DoS GoldenEye': ['205.174.165.73','172.16.0.1'],
+               'DoS slowloris': ['205.174.165.73','172.16.0.1'],
+               'DoS Slowhttptest': ['205.174.165.73','172.16.0.1'],
+               'FTP-Patator': ['172.16.0.1'],
+               'SSH-Patator': ['172.16.0.1'],
+               'Bot': ['205.174.165.73'],
+               'Web Attack - Brute Force': ['205.174.165.73', '172.16.0.1'],
+               'Web Attack - XSS': ['205.174.165.73', '172.16.0.1'],
+               'Web Attack - Sql Injection': ['205.174.165.73', '172.16.0.1'],
+               'Infiltration': ['205.174.165.73'],
+               'Heartbleed': ['205.174.165.73', '172.16.0.1']}
+
+org_features: ['fl_dur','tot_fw_pkt','tot_bw_pkt','tot_fw_pkt_l','tot_bw_pkt_l','fw_pkt_l_max','fw_pkt_l_min',
+               'fw_pkt_l_avg','fw_pkt_l_std','bw_pkt_l_max','bw_pkt_l_min','bw_pkt_l_avg','bw_pkt_l_std','fl_byt_s',
+               'fl_pkt_s','fl_iat_avg','fl_iat_std','fl_iat_max','fl_iat_min','fw_iat_tot','fw_iat_avg','fw_iat_std',
+               'fw_iat_max','fw_iat_min','bw_iat_tot','bw_iat_avg','bw_iat_std','bw_iat_max','bw_iat_min','fw_psh_flag',
+               'bw_psh_flag','fw_urg_flag','bw_urg_flag','fw_hdr_len','bw_hdr_len','fw_pkt_s','bw_pkt_s','pkt_len_min',
+               'pkt_len_max','pkt_len_avg','pkt_len_std','pkt_len_va','fin_cnt','syn_cnt','rst_cnt','pst_cnt','ack_cnt',
+               'urg_cnt','cwe_cnt','ece_cnt','down_up_ratio','pkt_size_avg','fw_seg_avg','bw_seg_avg','fw_byt_blk_avg',
+               'fw_pkt_blk_avg','fw_blk_rate_avg','bw_byt_blk_avg','bw_pkt_blk_avg','bw_blk_rate_avg','subfl_fw_pkt',
+               'subfl_fw_byt','subfl_bw_pkt','subfl_bw_byt','fw_win_byt','bw_win_byt','Fw_act_pkt','fw_seg_min',
+               'atv_avg','atv_std','atv_max','atv_min','idl_avg','idl_std','idl_max','idl_min']
+
+seq_feature: ['interarrival_time', 'idle', 'active', 'pkt_len_series',
+              'pkt_head_len_series', 'byts_s_series', 'byts_s_series_fw', 'byts_s_series_bw',
+              'pkts_s_series', 'pkts_s_series_fw', 'pkts_s_series_bw', 'pkt_direc',
+              'flag_seires_FIN', 'flag_seires_SYN', 'flag_seires_RST', 'flag_seires_PSH',
+              'flag_seires_ACK', 'flag_seires_URG', 'flag_seires_ECE', 'flag_seires_CWR',
+              'bulk_count_series', 'bulk_count_series_fw', 'bulk_count_series_bw', 'bulk_size_series',
+              'bulk_size_series_fw', 'bulk_size_series_bw', 'win_fw', 'win_bw']
+
+BFS: ['pkt_len_seq', 'pkt_head_len_seq', 'pkt_direc', 'time_stamp', 'flag', 'win']
+
+# data raw path
+raw_path: '/mnt/678fc01a-1165-4fc8-83f8-481ccd9508b3/cic17/'
+csv_files: ["Monday-WorkingHours.csv",
+            "Tuesday-WorkingHours.csv",
+            "Wednesday-WorkingHours.csv",
+            "Thursday-WorkingHours.csv",
+            "Friday-WorkingHours.csv"]
+
+# splitted pcap & generated new csv table (which includes formatted class name)
+raw_path_pcap: '/mnt/ff1f01b3-85e2-407c-8f5d-cdcee532daa5/cic17/split_new/'
+csv_new: '/mnt/ff1f01b3-85e2-407c-8f5d-cdcee532daa5/CIC-IDS-2017_new.csv'
+
+# match pcap
+matched_pcap: '/mnt/ff1f01b3-85e2-407c-8f5d-cdcee532daa5/cic17/matched_pcap/'

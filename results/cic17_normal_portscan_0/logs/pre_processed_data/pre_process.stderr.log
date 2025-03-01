@@ -1,0 +1,23 @@
+0it [00:00, ?it/s]0it [00:08, ?it/s]
+Traceback (most recent call last):
+  File "/home/minxiao/workspace/ProGen/netshare/pre_post_processors/pre_post_processor.py", line 24, in pre_process
+    return self._pre_process(
+  File "/home/minxiao/workspace/ProGen/netshare/pre_post_processors/netshare/netshare_pre_post_processor.py", line 324, in _pre_process
+    objs.append(split_per_chunk.remote(
+  File "/home/minxiao/workspace/ProGen/netshare/ray/remote.py", line 34, in remote
+    return ResultWrapper(self._ray_args[0](*args, **kwargs))
+  File "/home/minxiao/workspace/ProGen/netshare/pre_post_processors/netshare/preprocess_helper.py", line 207, in split_per_chunk
+    df_per_chunk, new_metadata_list = apply_per_field(
+  File "/home/minxiao/workspace/ProGen/netshare/pre_post_processors/netshare/preprocess_helper.py", line 165, in apply_per_field
+    this_df = original_df.apply(
+  File "/home/minxiao/anaconda3/envs/ProGen/lib/python3.9/site-packages/pandas/core/frame.py", line 9568, in apply
+    return op.apply().__finalize__(self, method="apply")
+  File "/home/minxiao/anaconda3/envs/ProGen/lib/python3.9/site-packages/pandas/core/apply.py", line 764, in apply
+    return self.apply_standard()
+  File "/home/minxiao/anaconda3/envs/ProGen/lib/python3.9/site-packages/pandas/core/apply.py", line 891, in apply_standard
+    results, res_index = self.apply_series_generator()
+  File "/home/minxiao/anaconda3/envs/ProGen/lib/python3.9/site-packages/pandas/core/apply.py", line 907, in apply_series_generator
+    results[i] = self.f(v)
+  File "/home/minxiao/workspace/ProGen/netshare/pre_post_processors/netshare/preprocess_helper.py", line 166, in <lambda>
+    lambda row: get_vector(embed_model, str(
+KeyboardInterrupt

@@ -1,0 +1,24 @@
+# basic info
+data_name: 'CIC-IDS-2018'
+class_name: ['normal', 'bruteforce', 'DoS', 'DDoS', 'infiltration', 'webattack']
+class_raw_path_dict: {'normal': ['/home/minxiao/workspace/HTGraph_IDS/raw_pcap_test/split_Thur_01_03_2018/'],
+                      'bruteforce': ['/home/minxiao/workspace/HTGraph_IDS/raw_pcap_test/split_Wed_14_02_2018/'],
+                      'DoS': ['/home/minxiao/workspace/HTGraph_IDS/raw_pcap_test/split_Thurs_15_02_2018/',
+                              '/home/minxiao/workspace/HTGraph_IDS/raw_pcap_test/split_Fri_16_02_2018/'],
+                      'DDoS': ['/home/minxiao/workspace/HTGraph_IDS/raw_pcap_test/split_Tues_20_02_2018/'],
+                      'infiltration': ['/home/minxiao/workspace/HTGraph_IDS/raw_pcap_test/split_Wed_28_02_2018/'],
+                      'webattack': ['/home/minxiao/workspace/HTGraph_IDS/raw_pcap_test/split_Thurs_22_02_2018/',
+                                      '/home/minxiao/workspace/HTGraph_IDS/raw_pcap_test/split_Fri_23_02_2018/']}
+
+# data raw path
+raw_path: ''
+csv_files: []
+
+# splitted pcap & generated new csv table (which includes formatted class name)
+raw_path_pcap: ''
+csv_new: ''
+
+# match pcap
+matched_pcap: ''
+
+# cp  ~/workspace/HTGraph_IDS/raw_pcap_test/Thur_01_03_2018_

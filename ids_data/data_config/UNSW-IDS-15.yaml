@@ -1,0 +1,18 @@
+# basic info
+data_name: 'UNSW-IDS-15'
+class_name: ['Normal', 'Generic', 'Exploits', 'Fuzzers', 'Reconnaissance',
+             'DoS', 'Shellcode', 'Analysis', 'Backdoor', 'Worms']
+
+# data raw path
+raw_path: '/mnt/678fc01a-1165-4fc8-83f8-481ccd9508b3/UNSW15/'
+csv_files: ["UNSW-NB15-CSVFiles/UNSW-NB15_1.csv",
+            "UNSW-NB15-CSVFiles/UNSW-NB15_2.csv",
+            "UNSW-NB15-CSVFiles/UNSW-NB15_3.csv",
+            "UNSW-NB15-CSVFiles/UNSW-NB15_4.csv"]
+
+# splitted pcap & generated new csv table (which includes formatted class name)
+raw_path_pcap: '/mnt/ff1f01b3-85e2-407c-8f5d-cdcee532daa5/UNSW15/split_new/'
+csv_new: '/mnt/ff1f01b3-85e2-407c-8f5d-cdcee532daa5/UNSW15/UNSW-NB15_new.csv'
+
+# match pcap
+matched_pcap: '/mnt/ff1f01b3-85e2-407c-8f5d-cdcee532daa5/UNSW15/matched_pcap/'
